@@ -1,0 +1,83 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 1s;
+    z-index: 99;
+}
+.js_overlay{
+    pointer-events: all;
+    opacity: 1;
+    transition: 1s;
+}
+
+.pop_box{
+    z-index: 100;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(0);
+    transition: 1s;
+}
+.js_pop_box{
+    transform: translate(-50%, -50%);
+    transform: scale(1);
+    transition: 1s;
+    transform: translate(-50%, -50%);
+}
+
+.result_image{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop_btn_bar{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pop_btn{
+    min-width: 80px;
+    padding: 7px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    background-color: #FE3E65;
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+@media screen and (min-width : 1200px) {
+    .pop_box{
+        width: 400px;
+        height: 400px;
+    }
+    .result_image{
+        width: 200px;
+        height: 200px;
+    }
+    .pop_btn{
+        min-width: 90px;
+        padding: 10px;
+    }
+}

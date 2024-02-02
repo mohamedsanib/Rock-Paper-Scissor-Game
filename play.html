@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/display.css">
+    <link rel="stylesheet" href="css/pop.css">
+</head>
+<body>
+
+    <div class="title_bar">
+        <div class="round_bar">
+            Round 5
+        </div>
+        <div class="score_bar">
+            <div class="score_box plyr_score_box">
+                score : 0 <br>
+                (player)
+            </div>
+            <div class="score_box cmptr_score_box">
+                score : 0 <br>
+                (player)
+            </div>
+        </div>
+    </div>
+
+    <div class="display_bar">
+        <div class="before_play">
+            <img src="images/start_logo.png" alt="">
+            <span class="quote_1">
+                Rock Paper Scissor
+            </span>
+            <span class="quote_2">
+                Make your Move...
+            </span>
+        </div>
+
+        <div class="playing_bar">
+            <div>
+                <div class="move_display plyr_move_disply">
+                    <img src="images/Rock.png" alt="">
+                </div>
+                <p>
+                    (Your Move)
+                </p>
+            </div>
+            <div class="move_display">
+                <img src="images/verses.png" alt="">
+            </div>
+            <div>
+                <div class="move_display cmp_move_disply">
+                    <img src="images/Paper.png" alt="">
+                </div>
+                <p>
+                    (System Move)
+                </p>
+            </div>
+        </div>
+        <p class="result_bar">
+        </p>
+    </div>
+
+    <div class="button_bar">
+        <div>
+            <button class="move_btn r_btn" onclick="RunGame('rock')">
+                <img src="images/Rock.png" alt="">
+            </button>
+
+            <button class="move_btn p_btn" onclick="RunGame('paper')">
+                <img src="images/Paper.png" alt="">
+            </button>
+
+            <button class="move_btn s_btn" onclick="RunGame('scissor')">
+                <img src="images/Scissor.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="overlay ">
+
+    </div>
+    <div class="pop_box ">
+        <div class="result_image">
+            <img src="images/won.png" alt="">
+        </div>
+        <div class="pop_btn_bar">
+            <button class="exit_btn pop_btn">
+                Exit
+            </button>
+            <button class="retry_btn pop_btn">
+                Retry Again
+            </button>
+        </div>
+    </div>
+
+</body>
+<script src="script/main.js">
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(86.3deg, #0077b6 3.6%, #081844 87.6%);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 350px;
+    margin: 2px;
+}
+.quote_1{
+    font-size: xx-large;
+    font-family: cursive;
+    margin: 5px;
+}
+button{
+    margin: 5px;
+    font-family: inherit;
+    font-size: medium;
+    font-weight: 500;
+    background-color: #FE3E65;
+    color: inherit;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+button:active{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
